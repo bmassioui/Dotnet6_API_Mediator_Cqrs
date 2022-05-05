@@ -1,0 +1,22 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "[!s]*/**": true,
+        "s[!r]*/**": true,
+        "sr[!c]*/**": true,
+        "src/[!C]*/**": true,
+        "src/C[!A]*/**": true,
+        "src/CA[!.]*/**": true,
+        "src/CA.[!D]*/**": true,
+        "src/CA.D[!o]*/**": true,
+        "src/CA.Do[!m]*/**": true,
+        "src/CA.Dom[!a]*/**": true,
+        "src/CA.Doma[!i]*/**": true,
+        "src/CA.Domai[!n]*/**": true
+    }
+}
