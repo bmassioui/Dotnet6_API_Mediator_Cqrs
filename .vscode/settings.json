@@ -12,11 +12,16 @@
         "src/[!C]*/**": true,
         "src/C[!A]*/**": true,
         "src/CA[!.]*/**": true,
-        "src/CA.[!D]*/**": true,
-        "src/CA.D[!o]*/**": true,
-        "src/CA.Do[!m]*/**": true,
-        "src/CA.Dom[!a]*/**": true,
-        "src/CA.Doma[!i]*/**": true,
-        "src/CA.Domai[!n]*/**": true
+        "src/CA.[!A]*/**": true,
+        "src/CA.A[!p]*/**": true,
+        "src/CA.Ap[!p]*/**": true,
+        "src/CA.App[!l]*/**": true,
+        "src/CA.Appl[!i]*/**": true,
+        "src/CA.Appli[!c]*/**": true,
+        "src/CA.Applic[!a]*/**": true,
+        "src/CA.Applica[!t]*/**": true,
+        "src/CA.Applicat[!i]*/**": true,
+        "src/CA.Applicati[!o]*/**": true,
+        "src/CA.Applicatio[!n]*/**": true
     }
 }
