@@ -6,24 +6,30 @@ namespace CA.Application.Interfaces.Repositories;
 public interface IBaseRepository<T> where T : BaseEntity
 {
     /// <summary>
-    /// Find All
+    /// Get - Async
     /// </summary>
-    /// <param name="includeDeleted"></param>
+    /// <param name="includeDeleted">if FALSE : soft deleted records are automatically excluded</param>
     /// <returns></returns>
-    IQueryable<T> FindAll(bool includeDeleted);
+    Task<IQueryable<T>> GetAsync(bool includeDeleted);
 
     /// <summary>
-    /// Find by Expression
+    /// Get by Expression - Async
     /// </summary>
     /// <param name="expression"></param>
     /// <returns></returns>
-    IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);
+    IQueryable<T> GetByCondition(Expression<Func<T, bool>> expression);
 
     /// <summary>
-    /// Create T
+    /// Add T
     /// </summary>
     /// <param name="entity"></param>
-    void Create(T entity);
+    void Add(T entity);
+
+    /// <summary>
+    /// Add Set of T
+    /// </summary>
+    /// <param name="entities"></param>
+    void AddRange(ICollection<T> entities);
 
     /// <summary>
     /// Update T

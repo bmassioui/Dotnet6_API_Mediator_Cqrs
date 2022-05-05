@@ -21,7 +21,7 @@ public interface IUnitOfWork
     void Rollback();
 
     /// <summary>
-    /// Save changes
+    /// Save changes - Async
     /// </summary>
-    void Save();
+    Task SaveChangesAsync();
 }
