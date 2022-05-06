@@ -5,6 +5,15 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "[!s]*/**": true,
+        "s[!r]*/**": true,
+        "sr[!c]*/**": true,
+        "src/[!C]*/**": true,
+        "src/C[!A]*/**": true,
+        "src/CA[!.]*/**": true,
+        "src/CA.[!A]*/**": true,
+        "src/CA.A[!P]*/**": true,
+        "src/CA.AP[!I]*/**": true
     }
 }
